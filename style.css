@@ -1,0 +1,86 @@
+:root {
+    --grid1-size-x: 3;
+    --grid1-size-y: 3;
+    --grid2-size-x: 3;
+    --grid2-size-y: 3;
+}
+
+body {
+    background-color:rgb(16, 56, 68);
+    color:blanchedalmond;
+    text-align: center;
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.dice-lable {
+    font-size: 6em;
+    text-shadow: 4px 2px 1px seagreen;
+}
+
+
+.dices-container {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    width: 66%;
+    margin: auto;
+    grid-gap: 1em;
+
+}
+
+.dice {
+    margin: auto;
+}
+
+
+.dice h3 {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.4em;
+}
+
+
+.dice-points-container {
+    width: 9em;
+    height: 9em;
+    padding: 1em;
+    background-color: brown;
+    border-radius: 20px;
+    display: grid;
+}
+
+.d1 .dice-points-container{
+    grid-template-columns: repeat(var(--grid1-size-x), 1fr);
+    grid-template-rows: repeat(var(--grid1-size-y), 1fr);
+}
+
+.d2 .dice-points-container{
+    grid-template-columns: repeat(var(--grid2-size-x), 1fr);
+    grid-template-rows: repeat(var(--grid2-size-y), 1fr);
+}
+
+.dice-points-container div {
+    width: 20px;
+    height: 20px;
+    background-color: bisque;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0.4em;
+    display: none;
+}
+
+.show{
+    display: inline-block !important;
+}
+
+
+
+
+footer {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 100;
+    padding: 2em;
+    padding-top: 7em;
+}
