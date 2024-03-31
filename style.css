@@ -23,6 +23,7 @@ body {
 
 section {
     text-align: center;
+    height: 85vh;
 }
 .dices-container {
     display: grid;
@@ -39,7 +40,7 @@ section {
 
 
 .dice h3 {
-    font-family: "Indie Flower", cursive;
+    font-family: "Edu NSW ACT Foundation", cursive;
     font-size: 1.4em;
 }
 
@@ -70,12 +71,12 @@ section {
     border-radius: 50%;
     margin: auto;
     padding: 0.4em;
+    /* box-shadow: 3px 3px 4px rgb(209, 107, 107)   ; */
 }
 
 footer {
     text-align: center;
-    font-family: 'Indie Flower', cursive;
-    font-weight: 100;
+    font-family: "Edu NSW ACT Foundation", cursive;
 }
 
 @media (max-width: 600px) {
@@ -83,7 +84,7 @@ footer {
         font-size: .7em;
     }
     .dice-points-container div {
-        padding: 0%;
+        padding: 4px;
         width: 15px;
         height: 15px;
     }
