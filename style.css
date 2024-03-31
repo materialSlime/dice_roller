@@ -80,7 +80,7 @@ footer {
 
 @media (max-width: 600px) {
     body {
-        font-size: .5em;
+        font-size: .7em;
     }
     .dice-points-container div {
         padding: 0%;
